@@ -60,10 +60,10 @@
 						<div class="cards">
 							<div class="card_item card_grow w-100">
 								<div class="card_img card-img-top">
-									<img :src="exhibit.image" class="" alt="" />
+									<img :src="`http://127.0.0.1:8000`+exhibit.images" class="" alt="" />
 								</div>
 								<div class="card_body">
-									<h5 class="card-title">{{ titleSlice(exhibit.title) }}</h5>
+									<h5 class="card-title">{{ titleSlice(exhibit.name) }}</h5>
 									<p class="card-text mb-4">
 										{{
 											textSlice(
@@ -88,13 +88,13 @@
 						<div class="row align-items-center">
 							<div class="col-md-6 d-flex justify-content-center">
 								<div class="cart_img_modal">
-									<img :src="exp.image" class="w-100" alt="" />
+									<img :src="`http://127.0.0.1:8000`+exp.images" class="w-100" alt="" />
 								</div>
 							</div>
 							<div class="col-md-6">
-								<p class="mt-2 mt-md-0">{{ exp.title }}</p>
+								<p class="mt-2 mt-md-0">{{ exp.name }}</p>
 								<p class="">
-									{{ exp.description }}
+									{{ exp.Info }}
 								</p>
 							</div>
 						</div>
@@ -129,7 +129,7 @@ export default {
 			activeId: 0,
 			exhibits: [],
 			sorteProducts: [],
-			exp: null,
+			exp: [],
 			loading: true,
 			search: '',
 		};
@@ -191,7 +191,7 @@ export default {
 		},
 		getExponant() {
 			axios
-				.get('https://fakestoreapi.com/products')
+				.get('http://127.0.0.1:8000/api-v1/com/')
 				.then(res => {
 					this.exhibits = res.data;
 					console.log(this.exhibits);

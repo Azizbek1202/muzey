@@ -1,5 +1,5 @@
 <template>
-	<div class="footer">
+	<div class="footer animate__backInDown">
 		<div class="top_window">
 			<el-button
 				type="primary"
