@@ -1,6 +1,7 @@
 <template>
 	<div>
 		<Header />
+		
 		<MuseumAllComponent />
 
 		<div class="container my-5 p-5 rounded">
@@ -131,7 +132,7 @@ import MuseumAllComponent from '@/components/MuseumAllComponent.vue';
 import axios from 'axios';
 export default {
 	name: 'publicationView',
-	components: { Header, Footer, MuseumAllComponent },
+	components: { Header, Footer, MuseumAllComponent,  },
 	data() {
 		return {
 			publications: [],

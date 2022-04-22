@@ -1,6 +1,7 @@
 <template>
 	<div>
 		<Header />
+		
 		<MuseumAllComponent />
 		<div class="container my-5 p-5 rounded">
 			<div class="row align-items-center">
@@ -38,9 +39,10 @@
 import Footer from '../components/Footer.vue';
 import Header from '@/components/Header.vue';
 import MuseumAllComponent from '@/components/MuseumAllComponent.vue';
+
 export default {
 	name: 'ImpressionsView',
-	components: { Header, Footer, MuseumAllComponent },
+	components: { Header, Footer, MuseumAllComponent,  },
 	data() {
 		return {
 			slides: [

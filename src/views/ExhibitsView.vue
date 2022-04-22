@@ -33,17 +33,17 @@
 					<div class="tab__main mb-5">
 						<div class="d-flex align-items-center flex-column flex-md-row">
 							<label
-								v-for="tab_item in tab_items"
-								:key="tab_item.id"
-								:class="tab_item.id === activeId ? 'activeTab' : ''"
-								@click="changeTab(tab_item.id)"
+								v-for="items in item"
+								:key="items.id"
+								:class="item.id === activeId ? 'activeTab' : ''"
+								@click="changeTab(item.id)"
 							>
 								<input
 									type="radio"
 									v-model="selectedCategory"
-									:value="tab_item.name"
+									:value="Type.name"
 								/>
-								{{ tab_item.name }}</label
+								{{ Type.name }}</label
 							>
 						</div>
 					</div>
@@ -67,8 +67,7 @@
 									<p class="card-text mb-4">
 										{{
 											textSlice(
-												'Lorem ipsum dolor sit amet, consectetur adipisicing'
-											)
+												exhibit.Author)
 										}}
 									</p>
 									<el-button class="w-100" @click="showExponant(exhibit.id)"
@@ -96,6 +95,11 @@
 								<p class="">
 									{{ exp.Info }}
 								</p>
+								<div class="col-md-6 d-flex justify-content-between">
+									<div class="col-md-4">Date:{{exp.Data_Found}}</div>
+								<div class="col-md-2">Author:{{exp.Author}}</div>
+								</div>
+                                <div class="col-md-6">Qaysi asrga tegishli:{{exp.Type}}</div>
 							</div>
 						</div>
 					</el-dialog>
@@ -116,12 +120,15 @@ export default {
 
 	data() {
 		return {
-			tab_items: [
+			Type: [
 				{ name: 'All', id: 0 },
-				{ name: "men's clothing", id: 1 },
-				{ name: 'jewelery', id: 2 },
-				{ name: 'electronics', id: 3 },
-				{ name: "women's clothing", id: 4 },
+				{ name: "1", id: 1 },
+				{ name: '2', id: 2 },
+				{ name: '3', id: 3 },
+				{ name: "4", id: 4 },
+				{ name: "5", id: 5 },
+				{ name: "6", id: 6 },
+				{ name: "7", id: 7 },
 			],
 			selectedCategory: 'All',
 			innerVisible: false,
