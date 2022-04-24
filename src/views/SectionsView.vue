@@ -1,10 +1,10 @@
 <template>
 	<div>
 		<Header />
-		<departaments-view />
-		<MuseumAllComponent />
-		<VSevtion />
 		
+		<MuseumAllComponent />
+	
+		<departaments-view />
 
 		<QuestionView />
 		<Maps />
@@ -18,7 +18,7 @@ import Footer from '../components/Footer.vue';
 import Header from '@/components/Header.vue';
 import MuseumAllComponent from '@/components/MuseumAllComponent.vue';
 import DepartamentsView from '@/components/Sections/DepartamentsView.vue';
-import VSevtion from '@/components/Sections/vSevtion.vue';
+
 export default {
 	name: 'sectionsView',
 	components: {
@@ -28,7 +28,7 @@ export default {
 		Maps,
 		QuestionView,
 		DepartamentsView,
-        VSevtion,
+      
 	},
 	data() {
 		return {
