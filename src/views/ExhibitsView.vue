@@ -59,7 +59,7 @@
 						<div class="cards">
 							<div class="card_item card_grow w-100">
 								<div class="card_img card-img-top">
-									<img :src="`http://127.0.0.1:8000`+exhibit.images" class="" alt="" />
+									<img :src="`http://127.0.0.1:8090`+exhibit.images" class="" alt="" />
 								</div>
 								<div class="card_body">
 									<h5 class="card-title">{{ titleSlice(exhibit.name) }}</h5>
@@ -86,7 +86,7 @@
 						<div class="row align-items-center">
 							<div class="col-md-6 d-flex justify-content-center">
 								<div class="cart_img_modal">
-									<img :src="`http://127.0.0.1:8000`+exp.images" class="w-100" alt="" />
+									<img :src="`http://127.0.0.1:8090`+exp.images" class="w-100" alt="" />
 								</div>
 							</div>
 							<div class="col-md-6">
@@ -98,7 +98,7 @@
 									<div class="col-md-4">Date:{{exp.Data_Found}}</div>
 								<div class="col-md-2">Author:{{exp.Author}}</div>
 								</div>
-                                <div class="col-md-6">Qaysi asrga tegishli:{{exp.Type}}</div>
+                                
 							</div>
 						</div>
 					</el-dialog>
@@ -192,7 +192,7 @@ export default {
 		},
 		getExponant() {
 			axios
-				.get('http://127.0.0.1:8000/api-v1/com/')
+				.get('http://127.0.0.1:8090/api-v1/com/')
 				.then(res => {
 					this.exhibits = res.data;
 					console.log(this.exhibits);
