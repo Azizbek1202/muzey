@@ -2,7 +2,6 @@
 	<div>
 		<Header />
 		<MuseumAllComponent />
-		<v-main-eksponant />
 		<div class="p-5 rounded my-5">
 			<p class="title_all">• Экспонаты</p>
 
@@ -31,22 +30,22 @@
 						</p>
 					</div>
 					<div class="tab__main mb-5">
-						<div class="d-flex align-items-center flex-column flex-md-row">
-							<label
-								v-for="items in item"
-								:key="items.id"
-								:class="item.id === activeId ? 'activeTab' : ''"
-								@click="changeTab(item.id)"
-							>
-								<input
-									type="radio"
-									v-model="selectedCategory"
-									:value="Type.name"
-								/>
-								{{ Type.name }}</label
-							>
-						</div>
-					</div>
+            <div class="d-flex align-items-center flex-column flex-md-row">
+              <label
+                v-for="(tab_item) in tab_items"
+                :key="tab_item.id"
+                :class="tab_item.id === activeId ? 'activeTab' : ''"
+                @click="changeTab(tab_item.id)"
+              >
+                <input
+                  type="radio"
+                  v-model="selectedCategory"
+                  :value="tab_item.name"
+                />
+                {{ tab_item.name }}</label
+              >
+            </div>
+          </div>
 				</div>
 				<!-- <form action="" class="mb-3">
 					<input type="text" v-model="search" placeholder="Serach..." />
@@ -120,15 +119,10 @@ export default {
 
 	data() {
 		return {
-			Type: [
+			tab_items: [
 				{ name: 'All', id: 0 },
-				{ name: "1", id: 1 },
-				{ name: '2', id: 2 },
-				{ name: '3', id: 3 },
-				{ name: "4", id: 4 },
-				{ name: "5", id: 5 },
-				{ name: "6", id: 6 },
-				{ name: "7", id: 7 },
+			{name:'eksponant1',id:1},
+			{name:'eksponant2',id:2},
 			],
 			selectedCategory: 'All',
 			innerVisible: false,
@@ -153,7 +147,7 @@ export default {
 				return vm.exhibits;
 			} else {
 				return vm.exhibits.filter(function (person) {
-					return person.category === category;
+					return person.name === category;
 				});
 			}
 		},

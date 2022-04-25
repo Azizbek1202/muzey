@@ -14,7 +14,7 @@
 		>
 			<ul class="d-flex align-items-center header_t me-3">
 				<li>
-					<a href="#"><img src="../assets/Vector.png" alt="telegram" /></a>
+					<a href="https://t.me/History_museum"><img src="../assets/Vector.png" alt="telegram" /></a>
 				</li>
 				<li class="mx-2">
 					<a href="#"><img src="../assets/Vector (1).png" alt="instagram" /></a>
@@ -156,7 +156,7 @@ export default {
 			options: [
 				{ value: 'En', label: 'En' },
 				{ value: 'Uz', label: 'Uz' },
-				{ value: 'Rus', label: 'Rus' },
+				{ value: 'Rus', label: 'Rus'}
 			],
 			value: 'En',
 		};

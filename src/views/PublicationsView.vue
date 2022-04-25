@@ -1,7 +1,6 @@
 <template>
 	<div>
 		<Header />
-		
 		<MuseumAllComponent />
 
 		<div class="container my-5 p-5 rounded">

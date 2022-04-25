@@ -61,24 +61,24 @@ export default {
 	Выставки: 'Выставки',
 	// quationas
 	'Muzeyda ekskursiyalarni qanday turlari mavjud?':
-		'Muzeyda ekskursiyalarni qanday turlari mavjud?',
+		'Какие виды экскурсий проводятся в музее?',
 	'Muzeyda turli toifadagi davr uchun eksponatlar mavjud':
-		'Muzeyda turli toifadagi davr uchun eksponatlar mavjud',
+		'В музее представлены экспонаты разных категорий периода',
 
 	'Muzeyda O`zbekistonning qadimgi allomalari bo`yicha ma`lumot mavjudmi?':
-		'Muzeyda O`zbekistonning qadimgi allomalari bo`yicha ma`lumot mavjudmi?',
+		'Есть ли в музее информация о древних ученых Узбекистана?',
 	'Muzeyda 1- va 2- rezenans davrida ujod qilgan ajdodlarimiz xaqida aloxida bo`limlar mavjud':
-		'Muzeyda 1- va 2- rezenans davrida ujod qilgan ajdodlarimiz xaqida aloxida bo`limlar mavjud',
+		'В музее есть отдельные разделы о наших предках, которые жили в 1 - й и 2 - й эпохи Возрождения',
 
 	'Bu muzeyda qadimiy shaxarlar va qadimiy yozuv madaniyatiga oid tarixiy manbalar mavjudmi?':
-		'Bu muzeyda qadimiy shaxarlar va qadimiy yozuv madaniyatiga oid tarixiy manbalar mavjudmi?',
+		'Есть ли в этом музее исторические источники о древних городах и древней письменной культуре?',
 	'Bu Muzey O`zbekistonning qadimiy davridan bugungi kungacha bo`lgan tarixi aks ettirilgan Xorazm, Baqtriya, So`g`d, Farg`ona kabi qadimiy davlatlar va ko`plab shaxarlarning tarixi xaqida Ma`lumot olish mumkin':
-		'Bu Muzey O`zbekistonning qadimiy davridan bugungi kungacha bo`lgan tarixi aks ettirilgan Xorazm, Baqtriya, So`g`d, Farg`ona kabi qadimiy davlatlar va ko`plab shaxarlarning tarixi xaqida Ma`lumot olish mumkin',
+		'В этом музее можно узнать об истории таких древних государств, как Хорезм, Бактрия, Согд, Фергана и многих других городов, отражающих историю Узбекистана с древнейших времен до наших дней',
 
 	'Muzeyda bolalar uchun maxsus ko`rgazmalar va malaka darslari tashkil etilganmi?':
-		'Muzeyda bolalar uchun maxsus ko`rgazmalar va malaka darslari tashkil etilganmi?',
+		'Организованы ли в музее специальные выставки и квалификационные занятия для детей?',
 	'2011-yilda respublikamizda ulk bora O`zbekiston Tarixi Davlat Muzeyi qoshidagi "Mo`jizalar olamida" bolalar muzeyi tashkil etilgan.Bu yerda xar seshanba va juma kunlari bolalar uchun kulolchilik, kashtachilik va tasviriy san`at yo`nalishlarida maxorat darslari bo`lib o`tadi':
-		'2011-yilda respublikamizda ulk bora O`zbekiston Tarixi Davlat Muzeyi qoshidagi "Mo`jizalar olamida" bolalar muzeyi tashkil etilgan.Bu yerda xar seshanba va juma kunlari bolalar uchun kulolchilik, kashtachilik va tasviriy san`at yo`nalishlarida maxorat darslari bo`lib o`tadi',
+		'В 2011 году в нашей республике при Государственном музее истории Узбекистана был создан детский музей "в мире чудес".Каждый вторник и пятницу здесь проходят мастер-классы для детей по керамике, вышивке и изобразительному искусству',
 
 	// quations
 };
