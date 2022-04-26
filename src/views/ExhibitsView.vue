@@ -86,17 +86,17 @@
 						<div class="row align-items-center">
 							<div class="col-md-6 d-flex justify-content-center">
 								<div class="cart_img_modal">
-									<img :src="`http://127.0.0.1:8090`+exp.images" class="w-100" alt="" />
+									<img :src="`http://172.20.18.248:9081/`+exp.images" class="w-100" alt="" />
 								</div>
 							</div>
 							<div class="col-md-6">
 								<p class="mt-2 mt-md-0">{{ exp.name }}</p>
 								<p class="">
-									{{ exp.Info }}
+									{{ exp.info }}
 								</p>
 								<div class="col-md-6 d-flex justify-content-between">
-									<div class="col-md-4">Date:{{exp.Data_Found}}</div>
-								<div class="col-md-2">Author:{{exp.Author}}</div>
+									<div class="col-md-4">Date:{{exp.data_Found}}</div>
+								<div class="col-md-2">Author:{{exp.author}}</div>
 								</div>
                                 
 							</div>
@@ -192,7 +192,7 @@ export default {
 		},
 		getExponant() {
 			axios
-				.get('http://127.0.0.1:8090/api-v1/com/')
+				.get('http://172.20.18.248:9081/api-v1/com/?format=json')
 				.then(res => {
 					this.exhibits = res.data;
 					console.log(this.exhibits);
