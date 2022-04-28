@@ -1,9 +1,8 @@
 const { defineConfig } = require('@vue/cli-service');
 module.exports = defineConfig({
 	transpileDependencies: true,
-	devServer: {
-		allowedHosts: 'all',
-	},
+});
+module.exports = {
 	pluginOptions: {
 		i18n: {
 			locale: 'uz',
@@ -12,5 +11,8 @@ module.exports = defineConfig({
 			enableInSFC: false,
 		},
 	},
-	
-});
+	devServer: {
+		allowedHosts: 'all',
+		port: 8091,
+	}
+};
