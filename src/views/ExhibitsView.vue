@@ -59,7 +59,7 @@
 						<div class="cards">
 							<div class="card_item card_grow w-100">
 								<div class="card_img card-img-top">
-									<img :src="`http://127.0.0.1:8090`+exhibit.images" class="" alt="" />
+									<img :src="`http://172.20.18.248:9081/`+exhibit.images" class="" alt="" />
 								</div>
 								<div class="card_body">
 									<h5 class="card-title">{{ titleSlice(exhibit.name) }}</h5>
