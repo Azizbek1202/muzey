@@ -9,14 +9,14 @@
 			>
 				<div class="vCards_hover">
 					<div class="content">
-						<router-link :to="`/sections/${item.id + 1}`">
+						<router-link :to="`/sections/${id + 1}`">
 							<div class="content_overlay"></div>
 							<img
 								:src="require('@/assets/MuseumPicture/' + item.url)"
 								alt=""
 							/>
 							<div class="content-details">
-								<p>Earth drawing andekseks design</p>
+								<p>Bo'lim nomi</p>
 							</div>
 						</router-link>
 					</div>

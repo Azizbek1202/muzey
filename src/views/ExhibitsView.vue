@@ -59,7 +59,7 @@
 						<div class="cards">
 							<div class="card_item card_grow w-100">
 								<div class="card_img card-img-top">
-									<img :src="`http://tarixmuzeyi.uz`+exhibit.images" class="" alt="" />
+									<img :src="`http://www.tarixmuzeyi.uz/api/`+exhibit.images" class="" alt="" />
 								</div>
 								<div class="card_body">
 									<h5 class="card-title">{{ titleSlice(exhibit.name) }}</h5>
@@ -86,7 +86,7 @@
 						<div class="row align-items-center">
 							<div class="col-md-6 d-flex justify-content-center">
 								<div class="cart_img_modal">
-									<img :src="`http://tarixmuzeyi.uz`+exp.images" class="w-100" alt="" />
+									<img :src="`http://www.tarixmuzeyi.uz/api/`+exp.images" class="w-100" alt="" />
 								</div>
 							</div>
 							<div class="col-md-6">
@@ -120,9 +120,14 @@ export default {
 	data() {
 		return {
 			tab_items: [
-				{ name: 'All', id: 0 },
-			{name:'eksponant1',id:1},
-			{name:'eksponant2',id:2},
+				{ name: 'Barchasi', id: 0 },
+			{name:"O'zbekiston hududi tosh davri",id:1},
+			{name:"Oʻzbekiston hududi bronza va ilk temir davri",id:2},
+			{name:"O'zbekiston hududida davlatchilikning o'rnatilishi",id:3},
+			{name:"O'zbekiston hududidagi davlat tuzilmalari",id:4},
+			{name:"9-12-asrlarda fan va madaniy taraqqiyot",id:5},
+			{name:"Temur va temuriylar davrining Uyg'onish davri",id:6},
+			{name:"O‘zbekiston 16-19 asrlarda",id:7},
 			],
 			selectedCategory: 'All',
 			innerVisible: false,
@@ -192,7 +197,7 @@ export default {
 		},
 		getExponant() {
 			axios
-				.get('http://tarixmuzeyi.uz/api-v1/com')
+				.get('http://www.tarixmuzeyi.uz/api/api-v1/com/')
 				.then(res => {
 					this.exhibits = res.data;
 					console.log(this.exhibits);

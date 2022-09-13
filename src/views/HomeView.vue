@@ -9,33 +9,38 @@
 					<div class="row align-items-center text-end">
 						<div class="col-md-6">
 							<div class="card-img-top">
-								<img src="../assets/photo_2022-04-09_11-59-07.jpg" alt="" />
+								<img src="../assets/3-floor_guiide.jpg" alt="" />
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="card-body">
-								<h5 class="card-title mb-4">Lorem ipsum dolor sit amet.</h5>
-								<p class="card-text">
-									Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-									Facere iusto pariatur illum deleniti odit voluptatem quo, quas
-									autem placeat blanditiis quibusdam quam esse alias debitis s
-									fugit inventore. Quam, minima harum expedita totam,
-								</p>
-								<p class="card-text">
-									quis sint tenetur explicabo cum architecto, eveniet accusamus
-									iure natus eius nemo laboriosam placeat eos numquam ex minus
-									ditiis dolorum rerum, delectus porro at odit enim fugiat
-									nulla, eum molestiae commodi, veritatis quidem doloremque
-									laborum optio nesciunt impedit accusamus!
-								</p>
-								<button
-									type="button"
-									class="btn btn-primary"
-									data-bs-toggle="modal"
-									data-bs-target="#staticBackdrop1"
-								>
-									Read More
-								</button>
+								<h5 class="card-title mb-4">Muzey qavatlarining joylashuvi</h5>
+								<p>I. O‘ZBEKISTON HUDUDIDA
+TOSH DAVRI
+MILODDAN AVVALGI 1,5 MLN YIL – 
+MILODDAN AVVALGI 5 MING YILLIK. 	10</p><p>
+
+II. O‘ZBEKISTON HUDUDIDA
+BRONZA DAVRI
+MILODDAN AVVALGI
+3–2 MING YILLIKLAR 	20</p><p>
+
+III. O‘ZBEKISTON HUDUDIDA DAVLATCHILIKNING SHAKLLANISHI VA RIVOJLANISHI
+MIL. AV. 1 MING YILLIK – MILODIY IV asr 	32</p><p>
+
+IV. O‘ZBEKISTON HUDUDIDAGI DAVLATCHILIK KO‘RINISHLARI
+V–VIII asrlar 	54</p><p>
+
+V. FAN VA MADANIYATNING RIVOJLANISHI
+IX–XIII asrlar 	68</p><p>
+
+VI. AMIR TEMUR VA
+TEMURIYLAR DAVRI RENESSANSI
+XIV–XV asrlar 	82</p><p>
+
+VII. XVI–XIX ASRLARDA
+O‘ZBEKISTON ....................................92</p>
+								
 							</div>
 						</div>
 						<!-- modal -->
@@ -51,7 +56,7 @@
 							<div class="modal-dialog modal-lg modal-dialog-scrollable">
 								<div class="modal-content">
 									<div class="modal-header">
-										<h5 class="modal-title" id="staticBackdropLabel1">Title</h5>
+										<h5 class="modal-title" id="staticBackdropLabel1">"Mo'jizalar olami" muzeyi haqida</h5>
 										<button
 											type="button"
 											class="btn-close"
@@ -62,27 +67,12 @@
 									<div class="modal-body">
 										<div>
 											<p>
-												Lorem ipsum dolor sit amet consectetur adipisicing elit.
-												Esse inventore totam commodi sed amet repellat in iusto,
-												expedita id iure. Voluptates adipisci magni, rem autem
-												possimus expedita sit nam necessitatibus consequatur
-												tenetur molestiae voluptate eaque delectus iste, quis
-												cupiditate mollitia maiores cum, inventore architecto
-												ducimus est nisi totam? Atque neque eum ipsa sit facere
-												porro quod architecto ad provident, quibusdam ab
-												molestiae vero quia perferendis illo harum eos tempora
-												fuga odit quo error. Quaerat necessitatibus doloremque
-												dolor saepe consequuntur, quo vel laborum assumenda
-												mollitia quasi, iure iste tenetur officiis sequi
-												deserunt consequatur corrupti adipisci harum maxime
-												pariatur culpa, id impedit!
-											</p>
-											<p>
-												Lorem ipsum dolor sit amet consectetur adipisicing elit.
-												Eligendi, beatae rerum? Delectus quidem animi,
-												voluptates architecto sed, asperiores tenetur nisi
-												dignissimos laudantium mollitia, quo corrupti molestias.
-												Similique qui quidem saepe.
+												Oʼzbekistonda ilk bora OʼZR FА Oʼzbekiston tarixi davlat muzeyi qoshida 2011 yil avgust oyida “Moʼjizalar olamida” bolalar muzeyi tashkil etildi. Mazkur bolalar muzeyi 4 yoshdan 14 yoshgacha boʼlgan barcha bolalarga moʼljallangan.
+Bolalar muzeyining vazifasi bolalarga tarixga oid bilimlarini rivojlantirishda koʼmak bergan holda, noanʼanaviy dasturlar va koʼrgazmalar orqali ularning qiziqishlari va imkoniyatlarini yuzaga chiqarishdan iborat.
+ “Аrxeologiya” boʼlimi orqali, Kampirtepa yodgorlikligi tasviri bilan oʼygʼunlashtirilgan qazilma maydonchasida qazish ishlarini olib borishlari, “Numizmatika” boʼlimida tangalarni zarb qilish tarixi bilan tanishgan holda, turli tarixiy davrlarga oid tangalarning ahamiyatli jihatlarini oʼrganishlari, “Kulolchilik” boʼlimida esa nafaqat milliy sopol buyumlarni, balki, tarixiy davrga oid tangalarni ham yasab, ularning yaratilish tarixi bilan tanishishlari mumkin. 
+“Kashtachilik ” boʼlimida esa kashta tikish, doʼppidoʼzlik mashgʼulotlari bilan shugʼullanishlari, “Tasviriy sanʼat” boʼlimida rassomchilikka oid bilimlar bilan bir qatorda, turli rasm va miniatyuralar chizishni oʼrganadilar. 
+“Qoʼgʼirchoq teatri” boʼlimida esa muzey fondidagi 100 yillik tarixga ega milliy qoʼgʼirchoqlar kollektsiyasi bilan tanishishlari va bevosita bolalar oʼzlari sevgan qahramonlari asosida ertaklarni sahnalashtirishlari mumkin.
+ ”Oʼzbekiston noz-neʼmatlari” boʼlimida yurtimizdagi meva-sabzavotlar turlari, pilla, paxta va makkajoʼxori maxsulotlarini yetishtirilishi jarayonlari toʼgʼrisida maʼlumotlar beriladi.
 											</p>
 										</div>
 									</div>
@@ -96,7 +86,15 @@
 		</div>
 		<!-- carusel photo -->
 		<div class="container my-5">
-			<p class="title_all">• Галерея</p>
+			<p class="title_all">• "Mo'jizalar olami" bolalar muzeyi</p>
+			<button
+									type="button"
+									class="btn btn-primary"
+									data-bs-toggle="modal"
+									data-bs-target="#staticBackdrop1"
+								>
+									Read More
+								</button>
 		</div>
 		<!-- carusel photo -->
 
@@ -185,6 +183,9 @@ export default {
 .box p:nth-child(3) {
 	font-size: 18px;
 	font-weight: 500;
+}
+.btn{
+	margin-left: 500px;
 }
 @media (max-width: 768px) {
 	.card-img-top {
