@@ -64,7 +64,7 @@
 				>
 					<div class="cards p-3">
 						<div class="card_img" @click="showPublications(publication.id)">
-							<img :src="publication.url" alt="" />
+							<img :src="`http://www.tarixmuzeyi.uz`+ publication.image" alt="" />
 						</div>
 						<div class="card_content">
 							<el-rate
@@ -74,10 +74,9 @@
 								:key="i"
 							>
 							</el-rate>
-							<h3>{{ publication.title }}</h3>
+							<h3>{{ publication.name }}</h3>
 							<p>
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit,
-								animi.
+								{{publication.title}}
 							</p>
 						</div>
 					</div>
@@ -164,7 +163,7 @@ export default {
 	methods: {
 		getPublications() {
 			axios
-				.get('https://jsonplaceholder.typicode.com/photos?_limit=20')
+				.get('http://www.tarixmuzeyi.uz/api/api-v1/picture/?format=json')
 				.then(res => {
 					this.publications = res.data;
 					console.log(this.publications);

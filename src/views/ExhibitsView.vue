@@ -32,14 +32,14 @@
 					<div class="tab__main mb-5">
             <div class="d-flex align-items-center flex-column flex-md-row">
               <label
-                v-for="(tab_item) in tab_items"
+                v-for="tab_item in tab_items"
                 :key="tab_item.id"
                 :class="tab_item.id === activeId ? 'activeTab' : ''"
                 @click="changeTab(tab_item.id)"
               >
                 <input
                   type="radio"
-                  v-model="selectedCategory"
+                  v-model="selectedCategory "
                   :value="tab_item.name"
                 />
                 {{ tab_item.name }}</label
@@ -77,7 +77,7 @@
 						</div>
 					</div>
 				</div>
-				<div v-if="exp">
+				<!-- <div v-if="exp">
 					<el-dialog
 						width="100%"
 						title="Outer Dialog"
@@ -91,9 +91,6 @@
 							</div>
 							<div class="col-md-6">
 								<p class="mt-2 mt-md-0">{{ exp.name }}</p>
-								<p class="">
-									{{ exp.info }}
-								</p>
 								<div class="col-md-6 d-flex justify-content-between">
 									<div class="col-md-4">Date:{{exp.data_Found}}</div>
 								<div class="col-md-2">Author:{{exp.author}}</div>
@@ -102,7 +99,7 @@
 							</div>
 						</div>
 					</el-dialog>
-				</div>
+				</div> -->
 			</div>
 		</div>
 		<Footer />
@@ -121,15 +118,16 @@ export default {
 		return {
 			tab_items: [
 				{ name: 'Barchasi', id: 0 },
-			{name:"O'zbekiston hududi tosh davri",id:1},
+			{name:'birinchi davr',id:1},
 			{name:"Oʻzbekiston hududi bronza va ilk temir davri",id:2},
 			{name:"O'zbekiston hududida davlatchilikning o'rnatilishi",id:3},
 			{name:"O'zbekiston hududidagi davlat tuzilmalari",id:4},
 			{name:"9-12-asrlarda fan va madaniy taraqqiyot",id:5},
 			{name:"Temur va temuriylar davrining Uyg'onish davri",id:6},
 			{name:"O‘zbekiston 16-19 asrlarda",id:7},
+			{name:"O‘zbekiston 19-20 asrlarda",id:8},
 			],
-			selectedCategory: 'All',
+			selectedCategory: 'Barchasi',
 			innerVisible: false,
 			outerVisible: false,
 			activeId: 0,
@@ -144,15 +142,15 @@ export default {
 		this.getExponant();
 	},
 	computed: {
-		filteredProducts: function () {
+		filteredProducts() {
 			var vm = this;
 			var category = vm.selectedCategory;
 
-			if (category === 'All') {
+			if (category === 'Barchasi') {
 				return vm.exhibits;
 			} else {
 				return vm.exhibits.filter(function (person) {
-					return person.name === category;
+					return person.type === category;
 				});
 			}
 		},
@@ -171,7 +169,7 @@ export default {
 		sortByCategories(category) {
 			this.sorteProducts = [];
 			this.exhibits.map(item => {
-				if (item.category === category.name) {
+				if (item.type === category.name) {
 					this.sorteProducts.push(item);
 				}
 			});
@@ -197,7 +195,7 @@ export default {
 		},
 		getExponant() {
 			axios
-				.get('http://www.tarixmuzeyi.uz/api/api-v1/com/')
+				.get('http://www.tarixmuzeyi.uz/api/api-v1/com/?format=json')
 				.then(res => {
 					this.exhibits = res.data;
 					console.log(this.exhibits);
